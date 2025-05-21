@@ -23,6 +23,9 @@ func main() {
 	to := readCurrency("Введите целевую валюту:")
 
 	result := calculationMoney(sum, from, to)
+	if result == -1 {
+		panic("Ошибка в конвертации")
+	}
 	fmt.Printf("%.2f %s = %.2f %s\n", sum, from, result, to)
 }
 
