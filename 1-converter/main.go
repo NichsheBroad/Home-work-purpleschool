@@ -19,7 +19,7 @@ func main() {
 	fmt.Println("Доступные валюты: EUR, USD, RUB")
 
 	from := readCurrency("Введите исходную валюту:")
-	sum := readAmount("Введите сумму для конвертации:")
+	sum := readSum("Введите сумму для конвертации:")
 	to := readCurrency("Введите целевую валюту:")
 
 	result := calculationMoney(sum, from, to)
@@ -39,7 +39,7 @@ func readCurrency(prompt string) string {
 	}
 }
 
-func readAmount(prompt string) float64 {
+func readSum(prompt string) float64 {
 	reader := bufio.NewReader(os.Stdin)
 	for {
 		fmt.Print(prompt + " ")
@@ -53,7 +53,6 @@ func readAmount(prompt string) float64 {
 	}
 }
 
-// isValidCurrency проверяет, что переданный код — один из EUR, USD, RUB.
 func isValidCurrency(curr string) bool {
 	switch curr {
 	case "EUR", "USD", "RUB":
