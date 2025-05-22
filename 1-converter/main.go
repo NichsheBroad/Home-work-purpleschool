@@ -14,6 +14,8 @@ const (
 	EURtoUSD = 0.92
 )
 
+// Нужно немного переделать мейн
+
 func main() {
 	fmt.Println("Конвертер валют")
 	fmt.Println("Доступные валюты: EUR, USD, RUB")
@@ -82,3 +84,4 @@ func calculationMoney(sum float64, from, to string) float64 {
 	default:
 		return -1
 	}
+}
