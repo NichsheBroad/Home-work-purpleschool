@@ -82,4 +82,3 @@ func calculationMoney(sum float64, from, to string) float64 {
 	default:
 		return -1
 	}
-}
