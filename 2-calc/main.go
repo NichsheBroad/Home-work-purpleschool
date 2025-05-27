@@ -1,5 +1,6 @@
 package main
 
+// проверка
 import (
 	"bufio"
 	"fmt"
