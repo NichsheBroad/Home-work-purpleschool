@@ -10,7 +10,7 @@ import (
 )
 
 func main() {
-	fmt.Println("Введите числа через пробел (можно с запятыми):")
+	fmt.Println("Введите числа через пробел (можно с запятыми): ")
 
 	arr := readArr()
 	operator := chekUserOperation("Введите операцию (AVG, SUM, MED):")
